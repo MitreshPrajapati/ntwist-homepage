@@ -1,0 +1,24 @@
+.section-oil-and-gas{
+  width: 60%;
+}
+.section-oil-and-gas div:last-child h1 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.section-oil-and-gas div:last-child p {
+  line-height: 27px;
+  margin-bottom: 1rem;
+}
+
+/*  responsiveness */
+
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 778px) {
+}
+@media only screen and (max-width: 480px) {
+}

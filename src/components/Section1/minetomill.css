@@ -1,0 +1,59 @@
+.section-mill-mine {
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "first last";
+}
+
+.section-mill-mine div:first-child {
+  grid-area: first;
+}
+.section-mill-mine div:last-child {
+  grid-area: last;
+}
+
+.section-mill-mine div:first-child h1 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.section-mill-mine div:first-child p {
+  line-height: 27px;
+  margin-bottom: 3rem;
+}
+
+.section-mill-mine div:first-child button {
+  margin-bottom: 3rem;
+}
+
+.machineImg {
+  width: 100%;
+}
+
+/*  responsiveness */
+@media only screen and (max-width: 1024px) {
+  .section-mill-mine {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "first"
+      "last";
+  }
+}
+@media only screen and (max-width: 778px) {
+  .section-mill-mine {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "last"
+      "first";
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-mill-mine {
+    display: grid;
+    grid-template-areas:
+      "last"
+      "first";
+  }
+}

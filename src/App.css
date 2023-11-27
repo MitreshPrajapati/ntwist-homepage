@@ -1,0 +1,168 @@
+/* import font style - Inter , Poppins and Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&family=Poppins&family=Roboto&display=swap");
+
+/* Root Variables */
+:root {
+  --header-height: 3rem;
+
+  /* Color and text color variables */
+  --primary-color: #fff;
+  --secondary-color: #ff3a2d;
+  --extra-color: #6f7f92;
+  --desc-color: #000000;
+  --btn-primary-color: #007aff;
+  --footer-color: #081528;
+
+  /* Font Color and Family variables */
+  --primary-font-family: "Roboto";
+  --secondary-font-family: "sans-serif";
+  --h1-big-font-size: 43px;
+  --h2-big-font-size: 40px;
+  --normal-font-size: 16px;
+
+  /* Font Weight variables */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+/* Universal CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root/ HTML CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* H1 tag*/
+h1 {
+  font-size: var(--h1-big-font-size);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/* h2 tag*/
+h2 {
+  color: var(--primary-color);
+  font-size: var(--h2-big-font-size);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/* a tag*/
+a {
+  font-size: var(--normal-font-size);
+  font-family: "Inter", sans-serif;
+}
+
+/* P tag */
+p {
+  font-size: var(--normal-font-size);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Un ordered list  */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--primary-font-family);
+}
+
+/* Button tag*/
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Basic Layout */
+.container {
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.customImg {
+  display: block;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #007aff;
+  color: var(--primary-color);
+  padding: 12px 40px;
+  border-radius: 2px;
+}
+
+/* Secondary Btn */
+.secondary-btn {
+  background-color: #ff3a2d;
+  color: var(--primary-color);
+  font-size: 15px;
+  font-family: var(--primary-font);
+  padding: 12px 24px;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 2px;
+}
+
+/* Scroll to Top Button */
+.homepage-btn {
+  position: fixed;
+  bottom: 20px;
+  z-index: 100;
+  left: 20px;
+  color: black;
+  padding: 10px 30px;
+}
+
+/* General Media Queries */
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .container {
+    /* max-width: 95%; */
+    margin: auto;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .primary-btn {
+    padding: 10px 30px;
+  }
+  .secondary-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
